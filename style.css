@@ -1,0 +1,16 @@
+body{
+    font-family:Arial;
+    background:#222;
+    color:white;
+    text-align:center;
+}
+
+.card{
+    margin:30px;
+}
+
+button{
+    padding:15px;
+    margin:10px;
+    font-size:20px;
+}

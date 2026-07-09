@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Greenhouse Controller</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Greenhouse Dashboard</h1>
+
+<div class="card">
+    <h2>💡 Lights</h2>
+    <button onclick="setLights(true)">ON</button>
+    <button onclick="setLights(false)">OFF</button>
+</div>
+
+<div class="card">
+    <h2>🌬 Vent</h2>
+    <button onclick="setVent(true)">OPEN</button>
+    <button onclick="setVent(false)">CLOSE</button>
+</div>
+
+<div class="card">
+    <h2>💧 Pump</h2>
+    <button onclick="setPump(true)">ON</button>
+    <button onclick="setPump(false)">OFF</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
