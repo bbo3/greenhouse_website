@@ -1,33 +1,132 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Greenhouse Controller</title>
-    <link rel="stylesheet" href="style.css">
+
+<title>Greenhouse Controller</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
 
-<h1>Greenhouse Dashboard</h1>
+
+<h1>🌱 Greenhouse Controller</h1>
+
+
 
 <div class="card">
-    <h2>💡 Lights</h2>
-    <button onclick="setLights(true)">ON</button>
-    <button onclick="setLights(false)">OFF</button>
+
+
+<h2>Login</h2>
+
+
+<input 
+id="password"
+type="password"
+placeholder="Enter password"
+>
+
+
+<button onclick="login()">
+Login
+</button>
+
+
+<p id="loginStatus"></p>
+
+
 </div>
 
-<div class="card">
-    <h2>🌬 Vent</h2>
-    <button onclick="setVent(true)">OPEN</button>
-    <button onclick="setVent(false)">CLOSE</button>
-</div>
+
+
+
+
+<div id="controls" style="display:none">
+
+
 
 <div class="card">
-    <h2>💧 Pump</h2>
-    <button onclick="setPump(true)">ON</button>
-    <button onclick="setPump(false)">OFF</button>
+
+<h2>💡 Lights</h2>
+
+<button onclick="setDevice('lights',true)">
+ON
+</button>
+
+
+<button onclick="setDevice('lights',false)">
+OFF
+</button>
+
+
 </div>
+
+
+
+
+
+<div class="card">
+
+<h2>🌬 Vent</h2>
+
+
+<button onclick="setDevice('vent',true)">
+OPEN
+</button>
+
+
+<button onclick="setDevice('vent',false)">
+CLOSE
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>💧 Water Pump</h2>
+
+
+<button onclick="setDevice('pump',true)">
+WATER PLANTS
+</button>
+
+
+<button onclick="setDevice('pump',false)">
+STOP WATERING
+</button>
+
+
+</div>
+
+
+
+
+<h2>Status</h2>
+
+<p id="status">
+Not connected
+</p>
+
+
+
+</div>
+
+
+
+
 
 <script src="script.js"></script>
 
+
 </body>
+
 </html>
